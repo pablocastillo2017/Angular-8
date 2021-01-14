@@ -2,15 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: ` <button [class.activo]="isActive">Mi Boton</button> `,
-  styles: [
-    `
-      .activo {
-        background: green;
-      }
-    `,
-  ],
+  template: `
+    <button [style.borderColor]="isActive ? 'red' : 'blue'">Mi Boton</button>
+  `,
+  styles: [``],
 })
 export class AppComponent {
-  isActive = true;
+  isActive = false;
 }
