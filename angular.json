@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "hola-mundo"
+  "defaultProject": "hola-mundo",
+  "cli": {
+    "analytics": "aaf3898d-1991-41b5-bc82-36f8832f69b1"
+  }
 }
