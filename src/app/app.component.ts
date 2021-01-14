@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <button [style.borderColor]="isActive ? 'red' : 'blue'">Mi Boton</button>
-  `,
+  template: ` <button (mouseover)="save($event)">Guardar</button> `,
   styles: [``],
 })
 export class AppComponent {
-  isActive = false;
+  save(e) {
+    console.log(e);
+  }
 }
