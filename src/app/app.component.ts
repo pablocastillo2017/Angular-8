@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  template: `
+    <img [src]="imagenURL" />
+    <button [disabled]="botonStatus">Mi boton</button>
+  `,
+  styles: [''],
 })
 export class AppComponent {
-  title = 'hola-mundo';
-  nombre = 'Pablo';
-
-  getNombre() {
-    return this.title + 'Mi nombre es: ' + this.nombre;
-  }
+  imagenURL = 'http://lorempixel.com/400/200';
+  botonStatus = false;
 }
