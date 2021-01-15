@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <br />
-    <input type="text" (keyup.enter)="onKeyUp()" />
+    <input type="text" (keyup.enter)="onKeyUp(nombre.value)" #nombre />
   `,
   styles: [``],
 })
 export class AppComponent {
-  onKeyUp() {
-    console.log('Presiono el Enter');
+  onKeyUp(usuario) {
+    console.log(usuario);
   }
 }
