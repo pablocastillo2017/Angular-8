@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./usuario.component.css'],
 })
 export class UsuarioComponent implements OnInit {
-  @Input() persona;
+  @Input('persona') lapersona;
   constructor() {}
 
   ngOnInit(): void {}
