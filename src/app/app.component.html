@@ -1,5 +1,5 @@
-<div *ngIf="isValid">Es Valido!</div>
+<div *ngIf="cursos.length > 0; then siCursos; else noCursos"></div>
 
-<div *ngIf="!isValid">No es Valido!</div>
+<ng-template #siCursos> Si Hay Cursos </ng-template>
 
-<div *ngIf="2 + 2 == 4">Correcto!!</div>
+<ng-template #noCursos> NO Hay Cursos </ng-template>
