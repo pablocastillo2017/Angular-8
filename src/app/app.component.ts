@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styles: [``],
 })
 export class AppComponent {
-  persona = {
-    nombre: 'Iron man',
-    edad: 20,
-  };
+  isValid = false;
 }
