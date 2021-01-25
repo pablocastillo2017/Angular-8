@@ -1,8 +1,14 @@
-<button (click)="addUser()">Agregar</button>
-<ul>
-  <li *ngFor="let persona of personas">
-    {{ persona.nombre }}
-    <button (click)="addBorrar(persona)">Borrar</button>
-    <button (click)="addActualizar(persona)">Actualizar</button>
+<ul *ngFor="let persona of personas" [ngSwitch]="persona.hobby">
+  <li *ngSwitchCase="'Cantar'" class="text-primary">
+    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
+  </li>
+  <li *ngSwitchCase="'Saltar'" class="text-danger">
+    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
+  </li>
+  <li *ngSwitchCase="'Correr'" class="text-info">
+    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
+  </li>
+  <li *ngSwitchCase="'Cagar'" class="text-dark">
+    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
   </li>
 </ul>

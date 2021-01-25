@@ -11,34 +11,25 @@ export class AppComponent {
       id: 1,
       nombre: 'Pablo',
       edad: 20,
+      hobby: 'Cantar',
     },
     {
       id: 2,
       nombre: 'Papo',
       edad: 33,
+      hobby: 'Saltar',
     },
     {
       id: 3,
       nombre: 'Hector',
       edad: 46,
+      hobby: 'Correr',
     },
     {
       id: 4,
       nombre: 'Nitro',
       edad: 59,
+      hobby: 'Cagar',
     },
   ];
-
-  addUser() {
-    this.personas.push({ id: 5, nombre: 'PENE', edad: 69 });
-  }
-
-  addBorrar(persona) {
-    let index = this.personas.indexOf(persona);
-    this.personas.splice(index, 1);
-  }
-
-  addActualizar(persona) {
-    persona.nombre = 'Rdy!!';
-  }
 }
