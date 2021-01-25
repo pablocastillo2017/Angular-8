@@ -1,14 +1,20 @@
-<ul *ngFor="let persona of personas" [ngSwitch]="persona.hobby">
-  <li *ngSwitchCase="'Cantar'" class="text-primary">
-    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
-  </li>
-  <li *ngSwitchCase="'Saltar'" class="text-danger">
-    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
-  </li>
-  <li *ngSwitchCase="'Correr'" class="text-info">
-    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
-  </li>
-  <li *ngSwitchCase="'Cagar'" class="text-dark">
-    {{ persona.nombre }} y su edad es de: {{ persona.edad }}
+<div
+  [style.backgroundColor]="isActive ? 'green' : 'red'"
+  [style.color]="isActive ? 'orange' : 'pink'"
+>
+  CODIGO MENOR
+</div>
+
+<hr />
+<div
+  [ngStyle]="{ backgroundColor: 'yellow', color: 'red', 'font-size': '40px' }"
+>
+  Hola Mundo
+</div>
+<hr />
+
+<ul *ngFor="let persona of personas">
+  <li [ngStyle]="{ color: getColor(persona.hobby) }">
+    {{ persona.nombre }}
   </li>
 </ul>

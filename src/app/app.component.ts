@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styles: [``],
 })
 export class AppComponent {
+  isActive = true;
   personas = [
     {
       id: 1,
@@ -32,4 +33,17 @@ export class AppComponent {
       hobby: 'Cagar',
     },
   ];
+
+  getColor(hobby) {
+    switch (hobby) {
+      case 'Cantar':
+        return 'red';
+      case 'Saltar':
+        return 'yellow';
+      case 'Correr':
+        return 'orange';
+      case 'Cantar':
+        return 'Cagar';
+    }
+  }
 }
