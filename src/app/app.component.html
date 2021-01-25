@@ -1,2 +1,6 @@
-<div [hidden]="cursos.length === 0">Tengo Cursos</div>
-<div [hidden]="cursos.length > 0">NO Tengo Cursos</div>
+<ul>
+  <li *ngFor="let persona of personas">
+    {{ persona.nombre }} Tiene : {{ persona.edad }} Años de Edad y su ID es =
+    {{ persona.id }}
+  </li>
+</ul>

@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styles: [``],
 })
 export class AppComponent {
-  cursos = ['java', 'React', 'Pyton', 'Sass'];
+  personas = [
+    {
+      id: 1,
+      nombre: 'Pablo',
+      edad: 20,
+    },
+    {
+      id: 2,
+      nombre: 'Papo',
+      edad: 33,
+    },
+    {
+      id: 3,
+      nombre: 'Hector',
+      edad: 46,
+    },
+    {
+      id: 4,
+      nombre: 'Nitro',
+      edad: 59,
+    },
+  ];
 }
