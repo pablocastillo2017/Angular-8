@@ -1,6 +1,8 @@
+<button (click)="addUser()">Agregar</button>
 <ul>
   <li *ngFor="let persona of personas">
-    {{ persona.nombre }} Tiene : {{ persona.edad }} Años de Edad y su ID es =
-    {{ persona.id }}
+    {{ persona.nombre }}
+    <button (click)="addBorrar(persona)">Borrar</button>
+    <button (click)="addActualizar(persona)">Actualizar</button>
   </li>
 </ul>

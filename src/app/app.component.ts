@@ -28,4 +28,17 @@ export class AppComponent {
       edad: 59,
     },
   ];
+
+  addUser() {
+    this.personas.push({ id: 5, nombre: 'PENE', edad: 69 });
+  }
+
+  addBorrar(persona) {
+    let index = this.personas.indexOf(persona);
+    this.personas.splice(index, 1);
+  }
+
+  addActualizar(persona) {
+    persona.nombre = 'Rdy!!';
+  }
 }
