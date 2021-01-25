@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styles: [``],
 })
 export class AppComponent {
-  cursos = [];
+  cursos = ['java', 'React', 'Pyton', 'Sass'];
 }
