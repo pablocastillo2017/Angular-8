@@ -1,20 +1,9 @@
 <div
-  [style.backgroundColor]="isActive ? 'green' : 'red'"
-  [style.color]="isActive ? 'orange' : 'pink'"
+  [ngClass]="{
+    'mi-clase-1': isActive,
+    'mi-clase-2': personas.length > 0,
+    'mi-clase-3': personas[personas.length - 1].nombre === 'Nitro'
+  }"
 >
-  CODIGO MENOR
+  Hola Mundo!!
 </div>
-
-<hr />
-<div
-  [ngStyle]="{ backgroundColor: 'yellow', color: 'red', 'font-size': '40px' }"
->
-  Hola Mundo
-</div>
-<hr />
-
-<ul *ngFor="let persona of personas">
-  <li [ngStyle]="{ color: getColor(persona.hobby) }">
-    {{ persona.nombre }}
-  </li>
-</ul>
