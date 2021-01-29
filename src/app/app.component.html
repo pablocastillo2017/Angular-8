@@ -1,12 +1,1 @@
-<div class="container-fluid">
-  <div>{{ curso.titulo | uppercase }}</div>
-  <hr />
-  <div>{{ curso.estudiantes | number }}</div>
-  <hr />
-  <div>{{ curso.fechaDeLanzamiento | date }}</div>
-  <hr />
-  <div>{{ curso.rating | number: "1.1-1" }}</div>
-  <hr />
-  <div>{{ curso.precio | currency: "$" }}</div>
-  <hr />
-</div>
+<div>{{ texto | resumir: 10 }}</div>
